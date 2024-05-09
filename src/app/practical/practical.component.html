@@ -1,0 +1,42 @@
+<div class="row" *ngIf="isList">
+    <div class="col-sm-3">
+        <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+    </div>
+  </div>
+
+  <h1>{{getsomeData}}</h1>
+<div class="container" *ngIf="allData?.length > 0">
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>Id</th>
+        <th>title</th>
+        <th>description</th>
+        <th>discountPercentage</th>
+        <th>rating</th>
+        <th>stock</th>
+        <th>brand</th>
+        <th>category</th>
+        <th>thumbnail</th>
+      </tr>
+      <tr *ngFor="let data of allData">
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.description}}</td>
+        <td>{{data.discountPercentage}}</td>
+        <td>{{data.rating}}</td>
+        <td>{{data.stock}}</td>
+        <td>{{data.brand}}</td>
+        <td>{{data.category}}</td>
+        <td><img src="{{data.thumbnail}}" style="width:45px; height:45px;" class="rounded-pill"/></td>
+      </tr>
+    </table>
+  </div>
+  <!-- <button class="btn btn-sm bg-warning" (click)="printAllData()">Print Data</button> -->
+</div>

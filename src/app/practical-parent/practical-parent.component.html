@@ -1,0 +1,8 @@
+<app-practical
+[isList]="trueOnSomeCondition"
+[getsomeData]="isGetSomeData"
+[allData]="allData"></app-practical>
+
+<button (click)="isShowSideList()" class="btn btn-sm mt-3 bg-success text-light">{{ trueOnSomeCondition?'Hide':'Show' }} Side list</button>
+<button (click)="feedSomeData()" class="btn btn-sm mt-3 bg-success text-light mx-1">Feed Data</button>
+<button (click)="sendAllData()" class="btn btn-sm mt-3 bg-success text-light">Send Data</button>

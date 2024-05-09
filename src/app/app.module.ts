@@ -10,6 +10,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { PracticalComponent } from './practical/practical.component';
+import { PracticalParentComponent } from './practical-parent/practical-parent.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     ExperienceComponent,
     ContactComponent,
     LayoutComponent,
-    NavbarComponent
+    NavbarComponent,
+    PracticalComponent,
+    PracticalParentComponent
   ],
   imports: [
     BrowserModule,

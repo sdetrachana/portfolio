@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChange, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +13,7 @@ export class NavbarComponent implements OnInit {
   @Input() isDanger:boolean = false;
   @Input() isBlue:boolean = false;
 
-  @Input() getsomeData:string = '';
-  @Input() isList:boolean =false;
+
 
   constructor() { }
 
@@ -26,32 +25,10 @@ export class NavbarComponent implements OnInit {
       {id:'003',name:'skillls'},
       {id:'004',name:'experience'},
       {id:'005',name:'contact'},
+      {id:'007',name:'practical-parent'},
+      // {id:'006',name:'practical'},
     ]
+  };
 
-  }
 
-  // changToDanger(){
-  //   this.isDanger = true;
-  //   this.isBlue = false;
-  //   this.isInfo = false;
-  //   this.isWarning = false;
-  // }
-  // changToInfo(){
-  //   this.isDanger = false;
-  //   this.isBlue = false;
-  //   this.isInfo = true;
-  //   this.isWarning = false;
-  // }
-  // changToWarning(){
-  //   this.isDanger = false;
-  //   this.isBlue = false;
-  //   this.isInfo = false;
-  //   this.isWarning = true;
-  // }
-  // changToPrimary(){
-  //   this.isDanger = false;
-  //   this.isBlue = true;
-  //   this.isInfo = false;
-  //   this.isWarning = false;
-  // }
 }
